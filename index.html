@@ -2163,7 +2163,7 @@ async function cargarVistaGeneral() {
       ${val('notas_cobranza') ? `<div class="dash-nota-mini">${escapeHTML(val('notas_cobranza'))}</div>` : ''}
     </div>
 
-    ${hayDesglose ? `<div class="ornamento">— · —</div><p class="sec-label bold">Cobrado por</p>${bloqueDesglose}` : ''}
+    ${hayDesglose ? `<div class="ornamento">— · —</div><p class="sec-label bold">Desglose de</p>${bloqueDesglose}` : ''}
   `;
 
   setTimeout(() => document.getElementById('loadingOverlay').classList.add('hidden'), 300);
